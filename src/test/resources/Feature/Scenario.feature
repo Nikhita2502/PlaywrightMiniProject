@@ -14,5 +14,5 @@ Feature: Search for topic on Playwright site
       | topic         | header         |
       |Selectors      |class-selectors |
       |Screenshots    |screenshots     |
-     
+      |locator        |locator         |
 

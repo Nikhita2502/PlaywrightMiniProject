@@ -60,8 +60,13 @@ public static void confirmTopic(String header){
  if(page.url().contains("screenshots")) {
 
                       page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("screenshots.png")).setFullPage(true));
-                  } 
-else { page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("xpath.png")).setFullPage(true));
+                  }
+    else if(page.url().contains("selectors")) {
+
+        page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("selectors.png")).setFullPage(true));
+    }
+
+    else { page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("locator.png")).setFullPage(true));
 
 
  }
