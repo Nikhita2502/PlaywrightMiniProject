@@ -41,7 +41,9 @@ public static void  searchBox(){
 }
 public static void searchTopic(String topic) {
     page.fill(" //input[@id='docsearch-input']",topic);
+    page.waitForTimeout(2000);
     page.locator(("(//div[@class='DocSearch-Hit-action'])[1]")).click();
+    page.waitForTimeout(3000);
 
     System.out.println("Searched for topic: " +topic);
 }
